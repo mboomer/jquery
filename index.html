@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+
+        <div id="admin-container">
+            <input id="input-create-item" type="text">
+            <button id="button-create-item">Add</button>
+            <p></p>
+            <div id="feedback-message">Enter a new destination and click the Add button</div>
+        </div>
+        
+        <hr />
+        <p></p>
+        
+        <div id="cart-container">$0</div>
+        
+        <hr />
+        <p></p>
+        
+        <div id="user-data">
+            <form id="cart-form" method="post" action="data/cartSubmit.json">
+                <br/>
+                <label>Name</label>
+                <input name="name" type="text">
+                <br/>
+                <label>Email</label>
+                <input name="email" type="text">
+                <br/>
+                <label>Newsletter?</label>
+                <input type="checkbox" name="wantNewsletter" id="newsletter-checkbox" checked >
+                <br/>
+                <select name="newsletterFrequency" id="newsletter-frequency">
+                    <option>-</option>
+                    <option selected>Weekly</option>
+                    <option>Monthly</option>
+                </select>
+                <br/>
+                <button id="submit-cart">Submit</button>
+            </form>
+        </div>
+
+        <hr />
+        <p></p>
+
+<!--    this is where the locations from the JSON file will be added -->
+        <div id="container">
+        </div>
+                
+<!-- Lessons -->
+        
+        <div id="container-6">
+            
+            <div class="item">
+                <div class="name">Santa Monica</div>
+                <img src="assets/beach.jpg">
+                <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div class="price">499</div>
+                <button class="item-add">Add to cart</button>
+                <button class="item-remove">Remove Destination</button>
+                <br />
+                <a class="more-info-link" href="#">More info</a>
+                <div class="more-info">Lorem ipsum dolor sit amet</div>
+            </div>
+
+        </div>
+
+        <div id="container-5">
+        
+            <input id="input-name" type="text" placeholder="Tell me your name!">
+            
+            <p></p>
+
+            <a href="http://zenva.com">I don't want to tell my name</a>
+            
+            <p></p>
+
+            <a id="implications" href="http://zenva.com">Click here to understand the implications of not entering your name</a>
+            
+            <p></p>
+
+            <select id="select-menu">
+                <option value=""  data-price=""   >Select a race</option>
+                <option value="5" data-price="19" >5k</option>
+                <option value="10" data-price="29">10k</option>
+                <option value="21" data-price="49">Half-marathon</option>
+                <option value="42" data-price="59">Marathon</option>
+            </select>
+            
+            <p></p>
+
+            <div id="feedback-message"></div>
+        
+        </div>
+
+        <div id="container-4">
+            <div class="box">
+                <div class="box-button">Click!</div>
+            </div>
+        </div>
+                
+        <div id="container-3">
+            <div class="temperature hot">
+                <div class="title">Hot</div>
+                <div class="item non-solid">Fire</div>
+                <div class="item solid">Lava</div>
+                <div class="item non-solid">Steam</div>
+            </div>
+            <br/>
+            <div class="temperature cold">
+                <div class="title">Cold</div>
+                <div class="item solid">Ice</div>
+                <div class="item non-solid" id="snow">Snow</div>
+                <div class="item non-solid">Rain</div>
+            </div>
+        </div>
+
+        <div id="container-2">
+            <div class="title">Hot</div>
+            <div class="hot">
+                <div class="item non-solid">Fire</div>
+                <div class="item solid">Lava</div>
+                <div class="item non-solid">Steam</div>
+            </div>
+            <br/>
+            <div class="title">Cold</div>
+            <div class="cold">
+                <div class="item solid">Ice</div>
+                <div class="item non-solid">Snow</div>
+                <div class="item non-solid">Rain</div>
+            </div>
+        </div>
+
+        <div id="container-1">
+            <input type="text" placeholder="Name" required>
+            <br/>
+            <input type="text" placeholder="Last Name">
+            <br/>
+            <input type="text" placeholder="E-mail" required>
+            <br/>
+            <button>Submit</button>
+        </div>
+        
+        <script src="js/jquery-3.5.1.js"></script>
+        <script src="js/main.js"></script>
+    
+    </body>
+
+</html>

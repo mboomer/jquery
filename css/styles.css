@@ -1,0 +1,101 @@
+body {
+    background-color: #EEE;
+}
+#container {
+    
+    display: flex;
+    flex-flow: row wrap;
+    
+    background-color: #FFF;
+    padding: 12px;
+    margin: 12px;
+}
+#cart-container {
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+    padding: 12px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #DDD;
+    padding: 8px;
+    margin: 4px;
+}
+.item img {
+    width: 100%;
+}
+.item .name {
+    font-size: 24px;
+}
+.item .price {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}    
+.item .more-info {
+    display: none;
+}
+#newsletter-frequency {
+    display: none;
+}
+/* ************** Lesson Styles ************** */
+
+#container-1, 
+#container-2, 
+#container-3, 
+#container-4,
+#container-5, 
+#container-6,
+#implications {
+    display: none;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #CFC;
+}
+.box-button {
+    width: 100px;
+    height: 20px;
+    background-color: #CCF;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.highlight {
+    color: #F00;
+}
+.highlight-red {
+    color: #F00;
+}
+.background-red {
+    background-color: #F00;
+}
+.highlight-blue {
+    color: #00F;
+}
+.background-blue {
+    background-color: #00F;
+}
+.highlight-green {
+    color: #0F0;
+}
+.background-green {
+    background-color: #0F0;
+}
+.highlight-purple {
+    color: #F0F;
+}
+.background-purple {
+    background-color: #F0F;
+}
+.required-field {
+    background-color: #FF0;
+}
+.item {
+    margin-left: 8px;
+}
